@@ -21,6 +21,8 @@ A型就労継続支援事業所 espo！長堀橋の公式ホームページで�
 | `screenshot.png` | WordPress管理画面用サムネイル画像 |
 | `.github/workflows/` | GitHub Actionsによる自動化設定 |
 
+![テーマのスクリーンショット](screenshot.png)
+
 ## 🚀 デプロイ・自動化
 
 本テーマは GitHub Actions を使用して、  
