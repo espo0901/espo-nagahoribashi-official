@@ -1,0 +1,26 @@
+/*
+Theme Name: Lightning Child
+Theme URI: 
+Template: lightning
+Description: 
+Author: 
+Tags: 
+Version: 0.6.0
+*/
+
+
+body{
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+
+/*プラグインのフォントが効かない場合*/
+.text_font{
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO","Kosugi Maru" !important;
+}
+/*
+add_filter('walker_nav_menu_start_el', 'description_in_nav_menu', 10, 4);
+function description_in_nav_menu($item_output, $item){
+return preg_replace('/(<a.*?>[^<]*?)<span>{$item->attr_title}</span><", $item_output); }
+*/
+

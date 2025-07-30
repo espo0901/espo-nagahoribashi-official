@@ -1,0 +1,40 @@
+# GitHub Actions のワークフロー定義ファイル
+# mainブランチにpushされたときに、自動でXserverへWordPressテーマをデプロイする
+
+name: Deploy WordPress Theme
+
+# on: いつこのワークフローを実行するのか
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpushをトリガーにする
+
+# jobs: ワークフローの内容
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # GitHubが用意してくれたLinux（仮想マシン）上で実行 
+
+    steps:
+    - name: リポジトリのコードをチェックアウト（取得）
+      uses: actions/checkout@v3  # GitHubのコードを取得する公式アクション 「checkout（チェックアウト）」というのは、「取り出して使えるようにする」
+
+    - name: SSH秘密鍵の設定
+      uses: shimataro/ssh-key-action@v2  # SSH接続を安全に行うためのアクション
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}  # GitHubのSecretsに登録した秘密鍵（OpenSSH形式）
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}  # SSH接続先の公開鍵情報（事前にssh-keyscanで取得してSecrets登録）
+
+    - name: XserverへSSH接続してgit pullを実行（最新テーマを取得）
+      run: |
+        ssh xs981006@sv12351.xserver.jp -p 10022 << 'EOF'
+          cd /home/xs981006/e-spo.org/public_html/wp-content/themes/lightning-child
+          git pull origin main
+          echo '🔥 デプロイ完了！'
+        EOF
+
+        # ↑ 各項目の説明：
+        # your_user             : XserverのSSHユーザー名（サーバーパネルに記載）
+        # your_xserver_domain.com : 接続先のドメインまたはホスト名（例: example.xsrv.jp）
+        # /home/your_account/... : WordPressが設置されているディレクトリパス（サーバーパネルやFTPで確認）
+        # your_theme            : テーマのフォルダ名（この中でgit pullして最新に更新する）
+        # origin main           : GitHubのmainブランチからpullする（mainブランチ運用が前提）
