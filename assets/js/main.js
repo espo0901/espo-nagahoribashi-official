@@ -150,7 +150,8 @@ jQuery(document).ready(function ($) {
   const mainCheckbox = document.getElementById('mainCheckbox');
   const additionalCheckboxes = document.getElementById('additionalCheckboxes');
 
-  mainCheckbox.addEventListener('change', () => {
+  if(mainCheckbox){
+    mainCheckbox.addEventListener('change', () => {
       if (mainCheckbox.checked) {
           // チェックが入ったら表示
           additionalCheckboxes.classList.remove('kengaku_hidden');
@@ -158,7 +159,9 @@ jQuery(document).ready(function ($) {
           // チェックが外れたら非表示
           additionalCheckboxes.classList.add('kengaku_hidden');
       }
-  });
+    });
+  }
+  
 
   /*--------------------------------------------------------------------------
   画像のアニメーション（3段チェーン）
