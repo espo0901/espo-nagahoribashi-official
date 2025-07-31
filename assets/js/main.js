@@ -9,12 +9,14 @@ jQuery(document).ready(function ($) {
     //0.3秒ごとにその要素（DOM）が存在するかチェック
     const check = setInterval(() => {
       const $elements = $(selector);
+
       if ($elements.length > 0) {
         clearInterval(check);
-        $elements.each(function () {
-          callback($(this));
-        });
-      }
+        
+          $elements.each(function () {
+            callback($(this));
+          });
+      } 
     }, 300);
   }
 
@@ -137,7 +139,10 @@ jQuery(document).ready(function ($) {
   waitForElements('.espo-balloon', initializeBalloonAnimations);
 
   // テキストアニメーション
-  waitForElements('.hero-text', animateTextWithRuby('.hero-text strong', 'fade-in-char', 200));
+  const heroTextCallback = function($el){
+    animateTextWithRuby('.hero-text strong', 'fade-in-char', 200);
+  }
+  waitForElements('.hero-text', heroTextCallback);
 
   /*--------------------------------------------------------------------------
   お問い合わせのチェックボックス表示切り替え
@@ -247,9 +252,12 @@ jQuery(document).ready(function ($) {
   お問い合わせ　クリックでひまわりジャンプアニメーション
   ----------------------------------------------------------------------------*/
   const button = document.getElementById("button_hima_butterfly");
-  button.addEventListener("mousedown", () => {button.classList.add("jump");});
-  button.addEventListener("animationend", () => {button.classList.remove("jump");});
-  button.addEventListener("animationcancel", () => {button.classList.remove("jump");});
+  if(button){
+    button.addEventListener("mousedown", () => {button.classList.add("jump");});
+    button.addEventListener("animationend", () => {button.classList.remove("jump");});
+    button.addEventListener("animationcancel", () => {button.classList.remove("jump");});
+  }
+  
 
 });
 
