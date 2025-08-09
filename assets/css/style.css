@@ -117,7 +117,7 @@
   transform: translateX(-50%);
   width: 180px;
   height: 180px;
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわり.png');
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわり.png');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
@@ -185,8 +185,8 @@ position: relative;
   left: -80px;
   width: 180px;
   height: 180px;
-  /*background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横.png');*/
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
+  /*background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横.png');*/
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: scaleX(-1);
@@ -199,8 +199,8 @@ position: relative;
   right: -80px;
   width: 180px;
   height: 180px;
-  /*background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横_反転.png');*/
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
+  /*background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横_反転.png');*/
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -252,7 +252,7 @@ position: relative;
   left: -60px;
   width: 200px;
   height: 200px;
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/エス（色調整）反転.png');
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/エス（色調整）反転.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(-5deg) translateX(-100%);
@@ -274,7 +274,7 @@ position: relative;
   right: -60px;
   width: 200px;
   height: 200px;
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/シエン（色調整）反転.png');
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/シエン（色調整）反転.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(15deg) translateX(100%);
@@ -303,7 +303,7 @@ position: relative;
 
 /*エスポのお仕事　クレヨン四角背景*/
 .work_back{
-background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/クレヨン長方形_緑明るくweb用.jpg');
+background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/クレヨン長方形_緑明るくweb用.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -398,7 +398,7 @@ width:100%;
   left: -70px;
   width: 150px;
   height: 150px;
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りクローバー.png');
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りクローバー.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: scaleX(-1);
@@ -424,8 +424,8 @@ position: relative;
   left: -80px;
   width: 180px;
   height: 180px;
-  /*background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横.png');*/
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
+  /*background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横.png');*/
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: scaleX(-1);
@@ -438,8 +438,8 @@ position: relative;
   right: -80px;
   width: 180px;
   height: 180px;
-  /*background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横_反転.png');*/
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
+  /*background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/ひまわ_タイトル横_反転.png');*/
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りひまわり.png');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -509,7 +509,7 @@ position: relative;
   right: -70px;
   width: 150px;
   height: 150px;
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りクローバー.png');
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/飾りクローバー.png');
   background-size: contain;
   background-repeat: no-repeat;
     transform: scaleX(-1);
@@ -812,8 +812,8 @@ z-index:9999;
   left: -30px;
   width: 100px;
   height: 100px;
-  /*background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/himawari_butterfly.png');*/
-  background-image: url('http://e-spo.org/espo_site02/wp-content/uploads/2024/08/himawari_butterfly_02.png');
+  /*background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/himawari_butterfly.png');*/
+  background-image: url('https://e-spo.org/espo_site02/wp-content/uploads/2024/08/himawari_butterfly_02.png');
 
   background-size: contain;
   background-repeat: no-repeat;
