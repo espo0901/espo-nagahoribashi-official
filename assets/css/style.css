@@ -20,6 +20,7 @@
   background-image: var(--hero-bg);
   background-size: cover;
   background-position: center;
+  background-color: #fff;
   /* フルブリード（Lightning等のコンテナを突破） */
   position: relative;
   width: 100vw;
