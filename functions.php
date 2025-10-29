@@ -183,3 +183,17 @@ function footer_widget_shortcode(){
     return ob_get_clean();
 }
 add_shortcode('LG_footer-widget', 'footer_widget_shortcode');
+
+// === LG Hero Shortcode ===
+// 呼び出し側: [lg_hero_template]
+function lg_hero_template_shortcode() {
+    // 出力バッファリング開始
+    ob_start();
+
+    // テンプレートパーツを呼び出し
+    get_template_part('assets/template-parts/espo-hero');
+
+    // バッファリングしていた内容を返す（HTMLとして出力される）
+    return ob_get_clean();
+}
+add_shortcode( 'lg_hero_template', 'lg_hero_template_shortcode' );

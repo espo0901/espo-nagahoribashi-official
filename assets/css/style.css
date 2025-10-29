@@ -16,6 +16,27 @@
   border-radius: 10px;
 }
 
+.lg-hero {
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  /* フルブリード（Lightning等のコンテナを突破） */
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.lg-hero.animate-fade { animation: fadeIn 1.5s ease-out; }
+.lg-hero.animate-kenburns { animation: kenburns 10s linear infinite; }
+
+.lg-hero__content{
+  position: relative;
+  bottom: -12rem;
+  padding: 10%;
+}
+
+
 /*背景画像スライド*/
 .wp-block-cover__image-background {
   transition: opacity 1s ease-in-out; /* JavaScriptでフェード効果を適用 */
@@ -927,7 +948,7 @@ margin-top:8px!important;
   display: flex;
   align-items: center;
   position: relative;
-  top: -5rem;
+  bottom: 1rem;
   opacity: 0;
 
 }
