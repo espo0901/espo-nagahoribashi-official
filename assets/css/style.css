@@ -37,6 +37,26 @@
   padding: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  .lg-hero {
+    background-size: contain;   /* 画像全体を収める */
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    aspect-ratio: 16 / 9;       /* 比率固定（お好みで） */
+    margin-left: 0;
+    transform: none;
+  }
+
+  .lg-hero__content {
+    position: absolute;
+    bottom: 12%;
+    padding: 6% 8%;
+    text-align: center;
+  }
+
+}
+
 
 /*背景画像スライド*/
 .wp-block-cover__image-background {
